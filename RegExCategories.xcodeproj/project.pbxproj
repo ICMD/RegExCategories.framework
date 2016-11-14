@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03A566CB1DD9B05100AFB835 /* RegExCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A566C91DD9B05100AFB835 /* RegExCategories.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		03A566D31DD9B06500AFB835 /* RegExCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A566D11DD9B06500AFB835 /* RegExCategories.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		03A566D41DD9B06500AFB835 /* RegExCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A566D21DD9B06500AFB835 /* RegExCategories.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		03A566C61DD9B05100AFB835 /* RegExCategories.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RegExCategories.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		03A566C91DD9B05100AFB835 /* RegExCategories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegExCategories.h; sourceTree = "<group>"; };
 		03A566CA1DD9B05100AFB835 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03A566D11DD9B06500AFB835 /* RegExCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegExCategories.h; sourceTree = "<group>"; };
+		03A566D21DD9B06500AFB835 /* RegExCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegExCategories.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +48,8 @@
 		03A566C81DD9B05100AFB835 /* RegExCategories */ = {
 			isa = PBXGroup;
 			children = (
-				03A566C91DD9B05100AFB835 /* RegExCategories.h */,
+				03A566D11DD9B06500AFB835 /* RegExCategories.h */,
+				03A566D21DD9B06500AFB835 /* RegExCategories.m */,
 				03A566CA1DD9B05100AFB835 /* Info.plist */,
 			);
 			path = RegExCategories;
@@ -59,7 +62,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03A566CB1DD9B05100AFB835 /* RegExCategories.h in Headers */,
+				03A566D31DD9B06500AFB835 /* RegExCategories.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03A566D41DD9B06500AFB835 /* RegExCategories.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +252,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.icmd.RegExCategories;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
 			};
 			name = Debug;
 		};
@@ -268,6 +273,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.icmd.RegExCategories;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
 			};
 			name = Release;
 		};
